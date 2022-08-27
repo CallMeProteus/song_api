@@ -1,38 +1,26 @@
 .App {
-  text-align: center;
-}
+  text-align: center;  background-color: rgb(6, 1, 41);  height: 100vh;  overflow-y: hidden;}
+.img-logo{  position: absolute;  top:4% ;left: 60%;  height: 80px;  width: 80px;  animation:move_up 62s infinite;}
+.img-logo:nth-child(2) {  left:75%;  height: 150px;  width: 150px;  animation:move_up 22s infinite;}
+.img-logo:nth-child(3) {  height: 50px;  width: 50px;  left: 10%;  animation:move_up 30s infinite;}
+.img-logo:nth-child(4) {  left:50%;  height: 80px;  width: 80px;  animation:move_up 40s infinite;}
+@keyframes move_up {  from{top: 75%;}    to{top:-20%}}
+.nav{width: 5%; height: 95%;background-color: rgb(159, 11, 11); border-radius: 20px;margin: 10px;padding-top: 5px;}
+.nav-item{height: 100px;margin-top:15px ;}
+.title{color: thistle; font-size: .7em;font-family: sans-serif;}
+.music-section{background-color: rgb(39, 39, 60); width: 80%;margin: auto;border-radius: 10px; height: 60vh; position: absolute; top:35% ;left: 10%;display: flex;overflow-x: scroll;-ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */}
+.holder{margin: 8px; transition-duration: 1s; height: 57%;} .holder:hover{transform: scale(1.05);}
+.song-pic{height: 80%; width: 200px; border-radius: 10px;}
+.song-title{color: thistle;font-family: sans-serif; font-weight: bold; font-size: small;}
+.main-song-title{ width: 80%;margin: auto; height: 55vh; position: absolute; top:5% ;left: 10%; color: thistle; font-size: 1.3em; font-family: arial;}
+.player-section{display: flex;justify-content:flex-start; width: 70%;margin: 5%; height: 10vh; position: fixed; bottom:0% ;left: 10%; color: thistle; font-size: 1.3em; font-family: arial; border-radius: 20px;background-color:rgb(22, 22, 49) ;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+.music-section::-webkit-scrollbar {display: none;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@media only screen and (max-width: 900px) {
+.nav{display: none;}.music-section{ display: inline;background-color: transparent;justify-content: center;width: 100%;left: 0;}.img-logo:nth-child(2) {left:30%}.song-pic{width: 80%;}.holder{height: 80%;}
 }
