@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from "axios";
 import '../App.css';
-
+import Beggar from '../assets/music/Beggar.mp3'
 
 const Node = () => {
 
@@ -34,6 +34,12 @@ const Node = () => {
     <>
 <div className='main-song-title'> <h1>Pinky</h1>
 <p>Search bar coming soon</p>
+<audio  controls style={{width:"90%",backgroundColor:'blue'}}>
+  <source src={Beggar} type="audio/ogg"/>
+  <source src={Beggar} type="audio/mpeg"/>
+  </audio>
+
+
 </div>
 
 <div className='music-section'>

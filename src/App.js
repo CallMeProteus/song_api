@@ -11,7 +11,7 @@ function App() {
     <img className='img-logo' src={logo} alt="Logo" />
     <img className='img-logo' src={logo} alt="Logo" />
     <img className='img-logo' src={logo} alt="Logo" />
-    <Node/>
+    {/* <Node/> */}
 
     </div>
   );
